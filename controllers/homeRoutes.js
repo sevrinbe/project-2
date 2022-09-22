@@ -21,4 +21,13 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/newtest', async (_req, res) => {
+  try {
+    // Change this to where you app should go
+    res.render('newtest');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;

@@ -36,8 +36,9 @@ const signupFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
+
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/newtest');
     } else {
       alert(response.statusText);
     }
@@ -51,3 +52,4 @@ document
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
+ // .addEventListener('submit', signupFormHandler);
