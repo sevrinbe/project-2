@@ -21,22 +21,26 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/homepage', async (_req, res) => {
-  try {
-    // Change this to where you app should go
+router.get('/homepage', async (req, res) => {
+  if (req.session.logged_in) {
     res.render('./homepage');
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+    return;
+  } res.render('login');
 
-router.get('/profile', async (_req, res) => {
-  try {
-    // Change this to where you app should go
-    res.render('profile');
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+  // Change this to where you app should go
+
+}
+);
+
+router.get('/profile', async (req, res) => {
+  if (req.session.logged_in) {
+    res.render('./profile');
+    return;
+  } res.render('login');
+
+  // Change this to where you app should go
+
+}
+);
 
 module.exports = router;
