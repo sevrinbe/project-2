@@ -16,22 +16,22 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  console.info('Users Seeded:', users);
+  // console.info('Users Seeded:', users);
 
   const healthData = await UserHealthData.bulkCreate(seedHealthData, {
   });
 
-  console.info('Health Data Seeded', healthData);
+  // console.info('Health Data Seeded', healthData);
 
   const weightData = await BodyWeightHistory.bulkCreate(seedWeightData, {
   });
 
-  console.info('Weight Data Seeded', weightData);
+  // console.info('Weight Data Seeded', weightData);
 
   const postData = await UserPosts.bulkCreate(seedPostData, {
   });
 
-  console.info('Weight Data Seeded', postData);
+  // console.info('Weight Data Seeded', postData);
 
   process.exit(0);
 };
