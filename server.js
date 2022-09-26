@@ -7,8 +7,8 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
-
 const sequelize = require('./config/connection');
+const { bmi } = require('health-calculator/lib/body_measurement');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
@@ -30,8 +30,8 @@ const sess = {
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
-    db: sequelize
-  })
+    db: sequelize,
+  }),
 };
 
 app.use(session(sess));
@@ -42,7 +42,7 @@ app.set('view engine', 'handlebars');
 
 app.use(
   helmet({
-    contentSecurityPolicy: false
+    contentSecurityPolicy: false,
   })
 );
 app.use(morgan('tiny'));
