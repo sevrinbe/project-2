@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/assets/css/style.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
@@ -86,22 +90,35 @@
           <h1>Graph will go here</h1>
 
 
+
+
           <!-- Post start -->
-          <div class="row post-border text-center justify-content-center">
+          <!-- <div class="row post-border text-center justify-content-center">
             <div class="card col-sm-5 border-right-0 border-left-0">
-              <h1>Workout</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni enim, eligendi soluta possimus veniam
-                similique unde quisquam odit temporibus maxime dignissimos id, doloremque illo deserunt qui voluptatibus
-                voluptates! Veniam, voluptatem.</p>
-            </div>
+              <h1>Workout</h1> -->
+             
+            <!-- </div>
             <div class="card col-sm-5 border-right-0 border-left-0">
               <h1>Notes</h1>
-              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni enim, eligendi soluta possimus veniam
-                similique unde quisquam odit temporibus maxime dignissimos id, doloremque illo deserunt qui voluptatibus
-                voluptates! Veniam, voluptatem.</p>
+              
             </div>
-          </div>
+          </div> -->
           <!-- Post end -->
+
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea3">Workout Post</label>
+            <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg">Publish</button>
+              <!-- <div class="col-8">
+                <input class="workout-title" placeholder="Workout" type="text">
+                <textarea class="note-textarea" placeholder="Note Text"></textarea>
+              </div> -->
+            <!-- </div>
+          </div> -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="/controllers/api/userRoutes.js"></script>
 
         </div>
 
