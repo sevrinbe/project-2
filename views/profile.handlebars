@@ -8,11 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/assets/css/style.css">
   <style>
+    <style>
+
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
@@ -96,8 +94,8 @@
           <!-- <div class="row post-border text-center justify-content-center">
             <div class="card col-sm-5 border-right-0 border-left-0">
               <h1>Workout</h1> -->
-             
-            <!-- </div>
+
+          <!-- </div>
             <div class="card col-sm-5 border-right-0 border-left-0">
               <h1>Notes</h1>
               
@@ -108,17 +106,16 @@
 
           <div class="form-group">
             <label for="exampleFormControlTextarea3">Workout Post</label>
-            <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
+            <textarea class="form-control" id="userText" rows="7"></textarea>
           </div>
-          <button type="button" class="btn btn-primary btn-lg">Publish</button>
-              <!-- <div class="col-8">
+          <button type="submit" class="btn btn-primary btn-lg" id="userPost">Publish</button>
+          <!-- <div class="col-8">
                 <input class="workout-title" placeholder="Workout" type="text">
                 <textarea class="note-textarea" placeholder="Note Text"></textarea>
               </div> -->
-            <!-- </div>
+          <!-- </div>
           </div> -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script src="/controllers/api/userRoutes.js"></script>
+
 
         </div>
 
@@ -126,6 +123,7 @@
       </div>
 
   </section>
+  <script src="/assets/js/posts.js"></script>
 </body>
 
 <footer class="container-fluid text-center">

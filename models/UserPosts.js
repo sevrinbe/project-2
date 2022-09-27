@@ -5,15 +5,6 @@ class UserPosts extends Model { }
 
 UserPosts.init(
   {
-    user_id: {
-      type: DataTypes.INTEGER,
-      onDelete: 'CASCADE',
-      onUpdate: 'CASCADE',
-      references: {
-        model: 'user',
-        key: 'id',
-      },
-    },
     post_id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
