@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class BodyWeightHistory extends Model {}
+class BodyWeightHistory extends Model { }
 
 BodyWeightHistory.init(
   {

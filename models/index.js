@@ -19,7 +19,10 @@ UserHealthData.hasOne(User, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
-
+//User.hasMany(UserPosts, {
+// foreignKey: 'post_id',
+// onDelete: 'CASCADE',
+//});
 
 module.exports = {
   User,

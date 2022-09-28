@@ -1,8 +1,10 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, UserPosts } = require('../../models');
+const { userPosts } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
+//signup
 
 router.post('/', async (req, res) => {
   try {
@@ -15,6 +17,8 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 })
+
+//login
 
 router.post('/login', async (req, res) => {
   try {
@@ -47,6 +51,8 @@ router.post('/login', async (req, res) => {
   }
 });
 
+//logout
+
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
@@ -55,6 +61,29 @@ router.post('/logout', (req, res) => {
   } else {
     // Change this wherever you like
     res.status(400).redirect('/');
+  }
+});
+
+//create new user post
+
+router.post('/posts', async (req, res) => {
+  try {
+    const userPostData = await UserPosts.create(req.body);
+    req.
+      res.status(200).json(userPostData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+router.get('/posts', async (req, res) => {
+  try {
+    const madePosts = await UserPosts.findAll()
+
+    req.session.post_id = madePosts.id;
+    res.status(200).json(madePosts);
+  } catch (err) {
+    res.status(400).json(err);
   }
 });
 

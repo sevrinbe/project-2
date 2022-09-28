@@ -8,6 +8,7 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 
+
 const withAuth = require('./utils/auth');
 const sequelize = require('./config/connection');
 const { bmi } = require('health-calculator/lib/body_measurement');
@@ -57,3 +58,5 @@ app.use(routes);
 sequelize.sync({ force: !IS_PROD }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on port: ${PORT}`));
 });
+
+
