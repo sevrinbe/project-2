@@ -39,7 +39,7 @@ const getPosts = async () => {
         .then((data) => { postText = data[postArray].post_content }).then(function render() {
 
             let str = '';
-            str += `<ol><div class="card" style="width: 18rem;">
+            str += `<ol><div class="card d-flex align-items-center" style="width: 28rem;">
             
             <div class="card-body">
               <h5 class="card-title">${postText}</h5>
@@ -55,4 +55,3 @@ const getPosts = async () => {
 }
 
 getPosts()
-

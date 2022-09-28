@@ -59,7 +59,7 @@
       <div class="row content">
 
         <!-- Side Bar -->
-        <div class="col-sm-2 sidenav">
+        <div class="col-sm-2 sidenav d-flex align-items-left">
           <div class=“card-body”>
             <h5 class=“card-title”>User’s Name</h5>
             <div class=“input-group input-group-sm mb-3”>
@@ -84,8 +84,8 @@
           </div>
         </div>
 
-        <div class="col-sm-8 text-center">
-          <h1>Graph will go here</h1>
+        <div class="col-sm-8 text-center d-flex flex-column align-items-center">
+          <h1>Track your workouts!</h1>
 
 
 
@@ -106,7 +106,7 @@
 
           <div class="form-group">
             <label for="exampleFormControlTextarea3">Workout Post</label>
-            <textarea class="form-control" id="userText" rows="7"></textarea>
+            <textarea class="form-control" id="userText" rows="7" cols="50"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-lg" id="userPost">Publish</button>
           <!-- <div class="col-8">
@@ -119,7 +119,7 @@
 
         </div>
       </div>
-      <ol reversed id="postMade">
+      <ol class="d-flex flex-column-reverse align-items-center ml-0 mr-5 pr-3" id="postMade">
       </ol>
 
 
