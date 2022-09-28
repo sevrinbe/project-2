@@ -45,6 +45,10 @@ const getPosts = async () => {
               <h5 class="card-title">${postText}</h5>
               <p class="card-text">${now}</p>
             </div>
+            <div class ="d-flex align-items-right">
+            <button class="editPost" id="edit${postArray}">Edit</button>
+            <button class="deletePost" id="delete${postArray}">Delete</button>
+            </div>
           </div></ol>`
             document.getElementById('postMade').innerHTML += str;
         })
