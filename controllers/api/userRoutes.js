@@ -78,10 +78,9 @@ router.post('/posts', async (req, res) => {
 
 router.get('/posts', async (req, res) => {
   try {
-    const madePosts = await UserPosts.findOne({ where: { post_id: req.body.post_id } })
+    const madePosts = await UserPosts.findAll()
 
     req.session.post_id = madePosts.id;
-    req.session.logged_in = true;
     res.status(200).json(madePosts);
   } catch (err) {
     res.status(400).json(err);
