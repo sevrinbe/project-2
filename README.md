@@ -1,20 +1,17 @@
-# Project 2 
+# Project 2 Workout Forum
 
 [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=yellow)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
 - [Description](#description)
-- [User Story](#user-story)
 - [Screenshot of Application Running](#screenshot)
 - [Contributors](#contributors)
 - [License](#license)
 
 ## Description
 
-
-## User Story
-
+This is a workout forum, where user are able to signup, login, logout and create a post under the profile page and able to edit and delete post. 
 
 ## ScreenShot
 
