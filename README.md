@@ -22,7 +22,13 @@
 
 ## Contributors
 
-Han, Sevrin, Grant, and Christian
+Han Zhang [github](https://github.com/hanzhang52)
+
+Sevrin Eldred [github](https://github.com/sevrinbe) 
+
+Grant Whitney [github](https://github.com/gwhitney15)
+
+Christian Fellwock [github](https://github.com/cfellwock)
 
 ## License
 
