@@ -18,7 +18,7 @@
 
 ## ScreenShot
 
-![Screenshot](/assets/img/screenshot.png)
+![Screenshot](./public/assets/img/gym.jpg)
 
 ## Contributors
 
