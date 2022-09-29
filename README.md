@@ -18,7 +18,7 @@
 
 ## ScreenShot
 
-![Screenshot](./public/assets/img/screenshot.png)
+![Screenshot](/assets/img/screenshot.png)
 
 ## Contributors
 
