@@ -11,10 +11,10 @@
 - [License](#license)
 
 ## Description
-
+Better Body Builder allows a user to login and track their health journey.
 
 ## User Story
-
+As a user I want to be able to login and record my workout progress by loggin in and creating posts.
 
 ## ScreenShot
 
