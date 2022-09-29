@@ -1,0 +1,38 @@
+[
+  {
+    "user_id": 1,
+    "weight_input": 240
+  },
+  {
+    "user_id": 1,
+    "weight_input": 96
+  },
+  {
+    "user_id": 1,
+    "weight_input": 213
+  },
+  {
+    "user_id": 2,
+    "weight_input": 180
+  },
+  {
+    "user_id": 2,
+    "weight_input": 384
+  },
+  {
+    "user_id": 2,
+    "weight_input": 182
+  },
+  {
+    "user_id": 3,
+    "weight_input": 80
+  },
+  {
+    "user_id": 3,
+    "weight_input": 184
+  },
+  {
+    "user_id": 3,
+    "weight_input": 282
+  }
+]

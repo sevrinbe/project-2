@@ -1,0 +1,23 @@
+[
+  {
+    "user_id": 1,
+    "height": 70,
+    "weight": 240,
+    "goal_weight": 180,
+    "birth_date": "1996-05-31"
+  },
+  {
+    "user_id": 2,
+    "height": 70,
+    "weight": 96,
+    "goal_weight": 156,
+    "birth_date": "2002-12-04"
+  },
+  {
+    "user_id": 3,
+    "height": 70,
+    "weight": 213,
+    "goal_weight": 185,
+    "birth_date": "1986-04-04"
+  }
+]

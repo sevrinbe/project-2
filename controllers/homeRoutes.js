@@ -15,10 +15,32 @@ router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
     // CHANGE THIS TO WHEREVER YOUR PROJECT NEEDS TO GO
-    res.redirect('/logged_in_hompage');
+    res.redirect('/homepage');
     return;
   }
   res.render('login');
 });
+
+router.get('/homepage', async (req, res) => {
+  if (req.session.logged_in) {
+    res.render('./homepage');
+    return;
+  } res.render('login');
+
+  // Change this to where you app should go
+
+}
+);
+
+router.get('/profile', async (req, res) => {
+  if (req.session.logged_in) {
+    res.render('./profile');
+    return;
+  } res.render('login');
+
+  // Change this to where you app should go
+
+}
+);
 
 module.exports = router;
