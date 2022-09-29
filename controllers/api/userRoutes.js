@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User, UserPosts } = require('../../models');
 const { userPosts } = require('../../models');
+const { afterFind } = require('../../models/User');
 const withAuth = require('../../utils/auth');
 
 
@@ -64,8 +65,8 @@ router.post('/logout', (req, res) => {
   }
 });
 
-//create new user post
 
+//create new user post
 router.post('/posts', async (req, res) => {
   try {
     const userPostData = await UserPosts.create(req.body);
@@ -76,6 +77,7 @@ router.post('/posts', async (req, res) => {
   }
 });
 
+//gets user posts
 router.get('/posts', async (req, res) => {
   try {
     const madePosts = await UserPosts.findAll()
@@ -87,4 +89,23 @@ router.get('/posts', async (req, res) => {
   }
 });
 
+
+//rough delete route. will need to be improved to delete by specific id
+router.delete('/posts', async (req, res) => {
+  try {
+    await UserPosts.findOne(req.params.post_id).then(post => {
+      if (post) {
+        post.destroy().then(post => {
+          res.status(200).json(`the post has been deleted`);
+        })
+      }
+    })
+
+
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 module.exports = router;
+
