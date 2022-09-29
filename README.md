@@ -1,6 +1,4 @@
-# Project 2 Boilerplate
-
-# Object-Relational Mapping E-commerce
+# Project 2 
 
 [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=yellow)](https://opensource.org/licenses/MIT)
 
@@ -20,7 +18,7 @@
 
 ## ScreenShot
 
-![Screenshot](screenshot1.png)
+![Screenshot](./public/assets/img/screenshot.png)
 
 ## Contributors
 
