@@ -2,7 +2,7 @@ const router = require('express').Router();
 // const { User } = require('../models');
 // const withAuth = require('../utils/auth');
 
-router.get('/', async (_req, res) => {
+router.get('/', (_req, res) => {
   try {
     // Change this to where you app should go
     res.render('login');
