@@ -8,14 +8,13 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 
-
 const withAuth = require('./utils/auth');
 const sequelize = require('./config/connection');
 const { bmi } = require('health-calculator/lib/body_measurement');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || '8080';
 
 const IS_PROD = process.env.NODE_ENV === 'prod';
 
@@ -58,5 +57,3 @@ app.use(routes);
 sequelize.sync({ force: !IS_PROD }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on port: ${PORT}`));
 });
-
-
